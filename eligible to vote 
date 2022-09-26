@@ -1,0 +1,9 @@
+try:
+	n=int(input("enter the age:"))
+	if(n<=0):
+    		print('not eligible for vote')
+	else:
+   	 	print('eligible for vote')
+    		print('you are allowed to vote after',18-n,'year')
+except ValueError:
+	print("enter integer number")

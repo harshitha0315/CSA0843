@@ -1,0 +1,26 @@
+count=0
+num=int(input("Enter the number :"))
+n=1
+flag=0
+while(count<num):
+    n+=1
+    for i in range(2,int(n/2)+1):
+        flag=0
+        if(n%i==0):
+            flag=1
+    if flag==0:
+        count+=1
+    if(count==num):
+        print(num,"TH prime number is ",n)
+        break
+pcount=0
+print("3 Prime numbers after",n ,"are",end=" ")
+while(pcount<3):
+    n+=1
+    for i in range(2,int(n/2)+1):
+        flag=0
+        if(n%i==0):
+            flag=1
+    if flag==0:
+        pcount+=1
+        print(n,end=" ")
